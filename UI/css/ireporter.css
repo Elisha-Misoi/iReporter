@@ -218,6 +218,7 @@ body, html{
     font-size:0.8em;
   }
   
+  /* hover color */
   #btn2:hover{ 
   background:#3594D2; 
   }
