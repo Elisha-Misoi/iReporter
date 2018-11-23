@@ -347,7 +347,7 @@ body{
 
 .content{
   height:  calc(100vh - 60px);;
-  grid-column: 1 /-1;
+  grid-column: 2 /-1;
   background-color: white;
   overflow-y: hidden;
 }
