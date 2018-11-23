@@ -313,3 +313,243 @@ body, html{
     }
   }
 
+/* Admin_Panel / User_Profile */
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: 60px auto;
+  background-color: whitesmoke;
+}
+.top{
+  grid-column: 1/-1;
+  grid-row: 1;
+  height: 60px;
+  background-color:#0b3357;
+  z-index: 99;
+}
+
+.nav{
+  grid-column: 1 /2;
+  height: calc(100vh- 60px);
+  background-image: url("images/header-background.jpg");
+  grid-row-start: 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.content{
+  height:  calc(100vh - 60px);;
+  grid-column: 1 /-1;
+  background-color: white;
+  overflow-y: hidden;
+}
+
+.content{
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  grid-row-start: 2;
+}
+
+.adminContent{
+  height:  calc(100vh - 60px);;
+  grid-column: 1 /-1;
+  background-color: white;
+  overflow-y: hidden;
+}
+
+.adminContent{
+  display: grid;
+  grid-template-columns:1fr 2fr;
+  grid-row-start: 2;
+}
+
+.posts{
+height: calc(100vh- 60px);;
+overflow-y: scroll;
+background-color:whitesmoke;
+box-sizing: border-box;
+position: relative;
+}
+
+.tabs{
+top: 60px;
+height: 60px;
+padding-left: 20px;
+padding-right: 20px;
+box-sizing: border-box;
+background-color: white;
+}
+
+.post-card{
+  height: 120px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+} 
+
+.author{
+  display: flex
+}
+
+.post-card img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.user{
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   color: rgb(109, 109, 109);
+   line-height: 2rem;
+   margin: 5px;
+}
+
+.description{
+  margin-left: 45px;
+  margin-bottom: 5px;
+  margin-top: 28px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(136, 133, 133);
+  font-weight: 100;
+  width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title{
+  margin-top: 0;
+  margin-bottom: 0;
+  float: left;
+  margin-left: 45px;
+  color:#0d4d94;
+}
+
+.status{
+  float: right;
+ font-family: 'Roboto', sans-serif;
+ font-weight: 10;
+ border-radius: 5px;
+ padding: 2px;
+ width: 70px;
+ text-align: center;
+ color: white;
+ height: 20px;
+}
+
+.pending{
+  background-color: #0d4d94;
+}
+.approved{
+  background-color: #2e7d32;
+}
+.rejected{
+  background-color: #9b0000;
+}
+
+.posts button{
+  height: 40px;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 100px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left:40px;
+  border: transparent;
+  background-color: #0d4d94;
+  color: white;
+  font-weight: bold;
+}
+
+
+/*review section*/
+.review{
+  grid-column: auto;
+  background-color:#f1f1f1 ;
+  padding: 30px;
+  box-sizing: border-box;
+  height: calc(100vh- 60px);
+}
+
+.complaint{
+  width: 100%;
+  background-color: white;
+  height: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.07);
+
+}
+
+#complaint-title{
+  height: 45px;
+  border-bottom: #2e7d32 2px solid;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(136, 133, 133);
+  padding-left: 10px;
+  font-size: 2em;
+  line-height: 2em;
+}
+
+#complaint-details{
+  font-family: 'Roboto', sans-serif;
+  color: rgb(27, 27, 27);
+  font-weight: 300;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.profile{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color:snow;
+  line-height: 2rem;
+}
+
+.profile img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.review button{
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 40px;
+  border: transparent;
+  color: snow;
+  font-size: 1em;
+  
+}
+
+#accept{
+  background-color: #2e7d32;
+}
+
+#reject{
+  background-color: #9b0000;
+}
+
+#review{
+  background-color: #0d4d94;
+}
+
+button:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.274);
+}
+
+button:focus{
+  outline: none;
+}
