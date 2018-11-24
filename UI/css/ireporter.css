@@ -40,6 +40,33 @@ body, html{
     margin: auto;  
   }
   
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-image: url("images/header-background.jpg");
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #0b3357;
+    color: white;
+  }
+
+  .active {
+    background-color: #0b3357;
+    color: white;
+  }
+
   .bg {
     /* The image used */
     background-image: url("images/header-background.jpg");
@@ -79,10 +106,12 @@ body, html{
     position: center;
     margin: auto;
     margin-top: 65px;
+    box-align: center;
+    justify-content: center;
     bottom: 90px;
     width: 300px;
   }
-  
+
   .box{
     background:white;
     border-radius:6px;
@@ -90,6 +119,7 @@ body, html{
     padding:0px 0px 70px 0px;
     border: #2980b9 4px solid; 
     box-align: center;
+    height: 100%;
   }
   
   .descriptionBox{
@@ -532,8 +562,22 @@ background-color: white;
   border: transparent;
   color: snow;
   font-size: 1em;
-  
 }
+
+.create{
+    background: #0b3357;
+    width:125px;
+    padding: 10px;
+    color:white;
+    border-radius:4px;
+    border: white 1px solid;
+    font-weight:800;
+    font-size:0.8em;
+  }
+  
+  .create:hover{
+    background:#144b72; 
+  }
 
 #accept{
   background-color: #2e7d32;
@@ -547,6 +591,11 @@ background-color: white;
   background-color: #0d4d94;
 }
 
+#createNew{
+    background-color: #0d4d94;
+    border-color: white;
+  }
+
 button:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.274);
 }
@@ -554,3 +603,91 @@ button:hover{
 button:focus{
   outline: none;
 }
+
+
+.dropbtn {
+    background-color: white;
+    color: #0b3357;
+    padding: 16px;
+    font-size: 16px;
+    border-color: #0b3357;
+    width: 300px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20%;
+    justify-content: center;
+    box-align: center;
+}
+
+.filloutInput{
+    background:#ecf0f1;
+    border: #ccc 1px solid;
+    border-bottom: #ccc 2px solid;
+    padding: 8px;
+    width:100%;
+    margin: auto;
+    color:#AAAAAA;
+    float: center;
+    margin-top:30px;
+    font-size:1em;
+    border-radius:4px;
+  }
+
+  .filloutTextArea{
+    background:#ecf0f1;
+    border: #ccc 1px solid;
+    border-bottom: #ccc 2px solid;
+    padding: 8px;
+    width:100%;
+    margin: auto;
+    color:#AAAAAA;
+    height: 200px;
+    float: center;
+    margin-top:30px;
+    font-size:1em;
+    border-radius:4px;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #0b3357; color: white}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #144b72; color: white;}
+
+.imageContainer {
+    width:140px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+    box-align: center;
+    color: white;
+    align-content: center;
+    margin: auto;
+  }
+  
+  .imageContainer:hover{
+    background: #144b72; 
+  }

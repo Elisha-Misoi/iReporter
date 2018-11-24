@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>iReporter Create Intervention</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="UI/css/ireporter.css">
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color: white;">Make a Report</h1>
+  <p>Call for a government agency to intervene.</p>
+</div>
+
+<div class="topnav">
+  <a href="home.html">About</a>
+  <a class="active">Make a Report</a>
+  <a href="user_profile.html">Profile</a>
+  <a href="admin_panel.html">Admin Panel</a>
+  <a href="signup.html">Sign Out</a>
+</div>
+
+
+
+<div>
+  <style>
+  * {
+      box-sizing: border-box;
+  }
+
+  .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+  }
+
+  /* Clearfix (clear floats) */
+  .row::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+  </style>
+  </head>
+  <body>
+
+    <div class="row">
+        <div class="column">
+          <div class="dropdown">
+          <button class="dropbtn">Select report type...</button>
+            <div class="dropdown-content">
+              <a href="#">Intervention</a>
+              <a href="#">Redflag</a>
+            </div>
+          </div>
+          <div>
+            <input type="name" name="subject" placeholder="subject" class="filloutInput" />
+            <textarea type="name" name="description" placeholder="description" class="filloutTextArea"></textarea>
+          </div>
+
+        </div>
+
+        <div class="column">
+        <div><img class="imageContainer" src="UI/css/images/camera.png"></div>
+          <div><input type="name" style="margin-top:23px;" name="subject" placeholder="location" class="filloutInput" /></div> 
+          <div class="create" style="margin: auto; margin-top:35px;">Submit</div>      
+        </div>
+    </div>
+
+  </body>
+</div>
+
+<div class="footer">
+  <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved</span>
+</div>
+
+</body>
+</html>
